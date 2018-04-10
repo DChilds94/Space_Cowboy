@@ -3,10 +3,12 @@ require_relative("../models/space_cowboys.rb")
 
 cowboy1 = SpaceCowboy.new({
     "name" => "Spike Spiegel",
-    "favourite_weapoon" => "Jericho 941 R.",
+    "favourite_weapon" => "Jericho 941 R.",
     "last_known_location" => "Titan",
     "bounty_value" => 5000
   })
+
+  cowboy1.save()
 
   cowboy2 = SpaceCowboy.new({
     "name" => "Jet Black",
@@ -15,12 +17,16 @@ cowboy1 = SpaceCowboy.new({
     "bounty_value" => 2000,
     })
 
+    cowboy2.save()
+
   cowboy3 = SpaceCowboy.new({
     "name" => "Faye Valentine",
     "favourite_weapon" => "Glock 30",
     "last_known_location" => "Cyrogenic lab facility",
     "bounty_value" => 1000000000
     })
+
+    cowboy3.save()
 
 binding.pry
 nil
